@@ -1,0 +1,30 @@
+DOCTORS
+1,Dr. Alice Green,Cardiology
+2,Dr. Bob White,Dermatology
+3,Dr. Charlie Black,Pediatrics
+4,Dr. Diana Blue,Orthopedics
+5,Dr. Eva Red,Neurology
+
+PATIENTS
+1,32,John Smith,Flu
+2,29,Jane Brown,Headache
+3,41,Michael Johnson,Diabetes
+4,36,Emily White,Broken Arm
+5,50,Sarah Black,Migraine
+6,45,Robert Green,High Blood Pressure
+7,28,Laura Blue,Skin Rash
+8,33,Daniel Red,Depression
+9,60,Mary Yellow,Cancer Screening
+10,22,Amanda Gray,Anxiety
+
+PELAYANAN_MEDIS
+1,2024-12-01,09:00,1,1
+2,2024-12-01,10:00,2,2
+3,2024-12-01,11:00,3,3
+4,2024-12-01,12:00,4,4
+5,2024-12-01,13:00,5,5
+6,2024-12-02,09:00,6,1
+7,2024-12-02,10:00,7,2
+8,2024-12-02,11:00,8,3
+9,2024-12-02,12:00,9,4
+10,2024-12-02,13:00,10,5

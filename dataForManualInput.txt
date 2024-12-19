@@ -1,0 +1,29 @@
+DOCTORS
+6,Dr. Frank Silver,Cardiology
+7,Dr. Grace Gold,Dermatology
+8,Dr. Henry Copper,Pediatrics
+9,Dr. Ivy Bronze,Orthopedics
+10,Dr. Jack Steel,Neurology
+
+PATIENTS
+11,34,Olivia White,Cold
+12,27,Liam Black,Allergies
+13,38,Emma Green,Asthma
+14,31,Noah Blue,Back Pain
+14,31,Noah Blue,Back Pain
+15,29,Ava Red,Fatigue
+16,42,Sophia Yellow,High Cholesterol
+17,55,Lucas Gray,Heart Disease
+18,24,Mia Orange,Stress
+
+PELAYANAN_MEDIS
+11,2024-12-03,09:00,11,6
+12,2024-12-03,10:00,12,7
+13,2024-12-03,11:00,13,8
+14,2024-12-03,12:00,14,9
+15,2024-12-03,13:00,15,10
+16,2024-12-04,09:00,16,6
+17,2024-12-04,10:00,17,7
+18,2024-12-04,11:00,18,8
+19,2024-12-04,12:00,11,9
+20,2024-12-04,13:00,12,10
