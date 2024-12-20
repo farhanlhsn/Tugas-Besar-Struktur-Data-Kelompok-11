@@ -35,7 +35,8 @@ int main() {
         cout << "14. Cari Pasien pada Dokter Tertentu\n";
         cout << "15. Menghapus pasien tertentu dari dokter tertentu beserta relasinya.\n";
         cout << "16. Hitung Jumlah Pasien dari Dokter Tertentu\n";
-        cout << "17. Keluar dari aplikasi\n";
+        cout << "17. Show Dokter beserta Pasien\n";
+        cout << "18. Keluar dari aplikasi\n";
         cout << "Enter your choice: ";
 
         cin >> choice;
@@ -195,11 +196,16 @@ int main() {
                 break;
             }
             case 17: {
+                cout << "List Dokter Beserta Pasien yang Terhubung dengannya:" << endl;
+                showDokterWithPasien(listD,listPM);
+                break;
+            }
+            case 18: {
                 cout << "Keluar dari program." << endl;
                 break;
             }
             default:
                 cout << "Masukan invalid, coba lagi!" << endl;
         }
-    } while (choice != 17);
+    } while (choice != 18);
 }

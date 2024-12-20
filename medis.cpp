@@ -394,7 +394,6 @@ F.S. Mengembalikan address baru pelayanan medis dengan data yang diinput,
     getline(cin, input); // Ambil input user
 
     stringstream ss(input);
-    cout << "Full input: " << input << endl;
     adrPelayanan newPelayanan = new elemenPelayananMedis;
     string idPelayanan, tanggal, waktu, idPasien, idDokter;
 

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <cstddef>
+/* #include <cstddef> */
 #include <iomanip> // untuk peggunaan setw() 
 
 using namespace std;
@@ -78,24 +78,24 @@ void loadPelayananMedis(listPelayananMedis &listPM, listDokter &listD, listPasie
 
 //Fungsi dan prosedur Primitif DOKTER
 bool isEmptyDokter(listDokter &L);
-void insertLastDokter(listDokter &L, dokter newData);
+void insertLastDokter(listDokter &L, dokter newData); //Spek 1
 void deleteFirstDokter(listDokter &L, listPelayananMedis &LPM, adrDokter &temp);
-void showDokter(listDokter L);
+void showDokter(listDokter L); //Spek 2
 dokter inputDataDokter();
 
 //Fungsi dan prosedur Non-Primtitf DOKTER
-adrDokter findDokterByID(listDokter &L, int ID);
+adrDokter findDokterByID(listDokter &L, int ID); //Spek 4
 
 //Fungsi dan prosedur Primitif PASIEN
-void insertFirstPasien(listPasien &L, pasien newData);
+void insertFirstPasien(listPasien &L, pasien newData); //Spek 6
 void showAllPasien(listPasien L);
 adrPasien deleteLastPasien(listPasien &L, listPelayananMedis &LPM);
 pasien inputDataPasien();
 
 //Fungsi dan prosedur Non-Primtitf PASIEN
 adrPasien deletePasien(listPasien &L, int IDPasien, listPelayananMedis &LPM);
-adrPasien findPasienByID(listPasien &L, int ID);
-void findPatientOnSpecificDocter(listPelayananMedis LPM, listDokter LD);
+adrPasien findPasienByID(listPasien &L, int ID); //Spek 5
+void findPatientOnSpecificDocter(listPelayananMedis LPM, listDokter LD); //Spek 9
 
 //Fungsi dan Prosedur Primitif RELASI
 void insertRelasi(listPelayananMedis &L, listDokter LD, listPasien LP);
@@ -103,10 +103,11 @@ void insertRelasiWithData(listPelayananMedis &L, adrPelayanan newdata);
 adrPelayanan deleteRelasi(listPelayananMedis &LPM, adrPelayanan &pred);
 
 //Fungsi dan Prosedur Non-Primitif RELASI
-void showAllRelasi(listPelayananMedis &L);
-void deleteDokterWithAllThePatient(listPelayananMedis &LPM, listDokter &LD, listPasien &LP, int IDDokter);
-void hubungkanDokterPasien(listPelayananMedis &listPelayanan, listDokter &LD, listPasien &LP, int IDDokter, int IDPasien);
-adrPasien deletePasienDariDokter(listDokter &listD, listPasien &listP, listPelayananMedis &listPM, int IDPasien, int IDDokter);
-int hitungPasienDokter(listPelayananMedis &LP, int IDDokter);
+void showAllRelasi(listPelayananMedis &L); 
+void deleteDokterWithAllThePatient(listPelayananMedis &LPM, listDokter &LD, listPasien &LP, int IDDokter); //Spek 3
+void hubungkanDokterPasien(listPelayananMedis &listPelayanan, listDokter &LD, listPasien &LP, int IDDokter, int IDPasien); //Spek 7
+adrPasien deletePasienDariDokter(listDokter &listD, listPasien &listP, listPelayananMedis &listPM, int IDPasien, int IDDokter); //Spek 10
+int hitungPasienDokter(listPelayananMedis &LP, int IDDokter); //Spek 11
+void showDokterWithPasien(listDokter &listD, listPelayananMedis &listPM); //Spek 8
 
 #endif /* medis_h */
